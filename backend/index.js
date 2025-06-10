@@ -8,7 +8,6 @@ const authRouter = require("./src/routes/auth.routes.js");
 const messageRouter = require("./src/routes/message.route.js");
 const cors = require("cors");
 const path = require("path");
-const __dirname = path.resolve();
 // Middlewares
 app.use(
   cors({

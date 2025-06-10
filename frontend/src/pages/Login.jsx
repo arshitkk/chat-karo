@@ -14,7 +14,6 @@ function Login() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   document.title = "Login";
-
   const submitHandler = async (e) => {
     try {
       e.preventDefault();
@@ -39,7 +38,7 @@ function Login() {
       }
     } catch (error) {
       const e = error?.response?.data?.message.split(":");
-      setError(e[e.length - 1]);
+      e && setError(e[e.length - 1]);
       console.log(error);
     }
   };
