@@ -9,7 +9,7 @@ function connectSocket(user, dispatch) {
   if (!socket || !socket.connected) {
     // Connect to the socket
     if (user) {
-      socket = io(BASE_URL, {
+      socket = io("https://chatting-karo.onrender.com", {
         withCredentials: true, // Enable cross-origin requests
         auth: user, // Pass the user object
       });
