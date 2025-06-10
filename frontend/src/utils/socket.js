@@ -15,9 +15,9 @@ function connectSocket(user, dispatch) {
       });
     }
     if (socket) {
-      // socket.on("connect", () => {
-      //   console.log(user.firstName + "(you) is connected on server");
-      // });
+      socket.on("connect", () => {
+        console.log(user.firstName + "(you) is connected on server");
+      });
 
       // Listen for online users event
       socket.on("onlineUsers", (users) => {
