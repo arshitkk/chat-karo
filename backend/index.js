@@ -32,12 +32,12 @@ if (process.env.NODE_ENV === "production") {
 }
 // Debug: list all registered Express routes
 console.log("📬 App routes:");
-// app._router.stack
-//   .filter(layer => layer.route)
-//   .forEach(layer => {
-//     const methods = Object.keys(layer.route.methods).join(", ").toUpperCase();
-//     console.log(`  ${methods} ${layer.route.path}`);
-//   });
+app._router.stack
+  .filter(layer => layer.route)
+  .forEach(layer => {
+    const methods = Object.keys(layer.route.methods).join(", ").toUpperCase();
+    console.log(`  ${methods} ${layer.route.path}`);
+  });
 
 // Start the server
 connectDB().then(() => {
