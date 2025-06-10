@@ -39,7 +39,7 @@ const MessageInput = () => {
     try {
       const response = await axios.post(
         BASE_URL + "/api/message/send/" + user._id.toString(),
-        { text, imagePreview },
+        { text, image: imagePreview },
         {
           withCredentials: true,
         }
