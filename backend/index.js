@@ -1,7 +1,7 @@
 // Dependencies
 const express = require("express");
-require("dotenv").config();
 const { app, server } = require("./src/config/socket.js");
+require("dotenv").config();
 const connectDB = require("./src/config/db.js");
 const cookieParser = require("cookie-parser");
 const authRouter = require("./src/routes/auth.routes.js");
@@ -30,14 +30,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
   });
 }
-// Debug: list all registered Express routes
-console.log("📬 App routes:");
-app._router.stack
-  .filter(layer => layer.route)
-  .forEach(layer => {
-    const methods = Object.keys(layer.route.methods).join(", ").toUpperCase();
-    console.log(`  ${methods} ${layer.route.path}`);
-  });
 
 // Start the server
 connectDB().then(() => {
