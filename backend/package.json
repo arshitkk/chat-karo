@@ -13,7 +13,6 @@
   "description": "Full stack chat app",
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "chat-karo": "file:..",
     "chatting-karo": "file:..",
     "cloudinary": "^2.6.1",
     "cookie-parser": "^1.4.7",
