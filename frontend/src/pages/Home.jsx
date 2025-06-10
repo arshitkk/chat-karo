@@ -4,7 +4,7 @@ import ChatContainer from "../components/ChatContainer";
 import { useSelector } from "react-redux";
 
 const HomePage = () => {
-  document.title = "Chat Karo";
+  document.title = "Chatting Karo";
 
   const selectedUser = useSelector((state) => state.chat.selectedUser);
   return (
