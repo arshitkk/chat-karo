@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Login from "./login";
+import Login from "./Login";
 import SignUp from "./signUp";
 import Settings from "./Settings";
 import Profile from "./Profile";
