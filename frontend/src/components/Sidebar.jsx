@@ -37,9 +37,9 @@ const Sidebar = () => {
   );
   const filteredUsers = ShowOnlineOnly ? onlineFilteredUsers : users;
   return (
-    <aside className="h-full lg:w-60 border-r border-base-300 flex flex-col transition-all duration-200">
+    <aside className="h-full lg:w-60 border-r border-base-300 flex flex-col transition-all duration-200 pt-5 p-3">
       <div className="border-b border-base-300 w-full p-1">
-        <div className="flex items-center gap-2"> 
+        <div className="flex items-center gap-2 pb-3">
           <Users className="size-6 ml-6" />
           <span className="font-medium hidden lg:block ">Contacts</span>
         </div>
@@ -56,11 +56,11 @@ const Sidebar = () => {
             />
             <span className="text-sm">Show online only</span>
           </label>
-          <span className="text-xs text-zinc-500">
+          <span className="text-xs text-zinc-500 ">
             ({onlineUsers.length - 1} online)
           </span>
         </div>
-        <div className="overflow-y-auto w-full py-3">
+        <div className="overflow-y-auto w-full py-3 pt-7">
           {filteredUsers &&
             filteredUsers.map((user) => (
               <button
