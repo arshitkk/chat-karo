@@ -37,7 +37,7 @@ const Sidebar = () => {
   );
   const filteredUsers = ShowOnlineOnly ? onlineFilteredUsers : users;
   return (
-    <aside className="h-full lg:w-60 border-r border-base-300 flex flex-col transition-all duration-200 pt-5 lg:p-5">
+    <aside className="h-full lg:w-72 border-r border-base-300 flex flex-col transition-all duration-200 pt-5 lg:p-5">
       <div className="border-b border-base-300 w-full p-1">
         <div className="flex items-center gap-2 pb-3">
           <Users className="size-6 ml-6" />
@@ -67,7 +67,7 @@ const Sidebar = () => {
                 key={user._id}
                 onClick={() => user && dispatch(setSelectedUser(user))}
                 className={`
-              w-full p-3 flex items-center gap-3
+              w-full p-1 flex items-center gap-3
               hover:bg-base-300 transition-colors
 
             `}
