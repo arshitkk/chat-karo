@@ -7,8 +7,8 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/slices/userSlice.js";
 import { BASE_URL } from "../utils/constants.js";
 function Login() {
-  const [email, setEmail] = useState("annu123@gmail.com");
-  const [password, setPassword] = useState("Annu@123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const dispatch = useDispatch();
