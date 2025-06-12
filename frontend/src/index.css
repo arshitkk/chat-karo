@@ -8,4 +8,7 @@
     "night", "coffee", "winter", "dim", "nord", "sunset";
 }
 
-
+html,
+body {
+  overscroll-behavior: none;
+}

@@ -22,7 +22,7 @@ const Settings = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
   return (
-    <div className=" container mx-auto px-3 pt-14 max-w-5xl">
+    <div className="scale-95 lg:scale-100 container mx-auto px-3 pt-18 max-w-5xl">
       <div className="space-y-6">
         <div className="flex flex-col gap-1">
           <h2 className="text-lg font-semibold">Theme</h2>
