@@ -14,7 +14,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://chatting-karo.onrender.com",
-      "http://192.168.1.5:5173",
+      "http://192.168.1.4:5173",
     ],
     credentials: true,
   })
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Start the server
 connectDB().then(() => {
-  server.listen(process.env.PORT, "0.0.0.0", () => {
+  server.listen(process.env.PORT, () => {
     console.log("Server started on port " + process.env.PORT);
   });
 });

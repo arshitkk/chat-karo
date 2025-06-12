@@ -37,10 +37,10 @@ const Sidebar = () => {
   );
   const filteredUsers = ShowOnlineOnly ? onlineFilteredUsers : users;
   return (
-    <aside className="h-full lg:w-72 border-r border-base-300 flex flex-col transition-all duration-200 pt-5 lg:p-5">
-      <div className="border-b border-base-300 w-full p-1">
-        <div className="flex items-center gap-2 pb-3">
-          <Users className="size-6 ml-6" />
+    <aside className="h-full  lg:w-72 border-2 shadow-2xl border-base-300 flex flex-col transition-all duration-200 pt-5 lg:p-5 ">
+      <div className="border-b  border-base-300 w-full p-1">
+        <div className="flex items-center gap-2 pb-3 ">
+          <Users className="size-6 ml-4 " />
           <span className="font-medium hidden lg:block ">Contacts</span>
         </div>
         {/* TODO: Online filter toggle */}
